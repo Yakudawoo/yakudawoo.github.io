@@ -17,9 +17,9 @@ header {
     background: #001f3f;
     color: #fff;
     padding: 10px 20px;
-    position: sticky;
+    /**position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000;*/
 }
 
 nav {
@@ -283,3 +283,4 @@ footer {
     text-align: center;
     padding: 20px;
     background: #001f3
+
