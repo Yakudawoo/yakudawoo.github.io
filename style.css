@@ -25,8 +25,8 @@ body {
 .main-container > div, 
 .main-container > section {
     width: 100%;
-    max-width: 1200px; /* Limitez la largeur maximale pour les grands écrans */
-    padding: 20px;
+    max-width:none !important;
+    padding: 0 !important;        /* pas de padding forcé ici */
 }
 
 /* Pour les images responsives dans les projets */
@@ -127,7 +127,7 @@ section, .main-container, .home {
     width: 100%;       /* Utilisez 100% au lieu de 100vw */
     max-width: 100%;   /* Max-width de 100% pour éviter les débordements */
     margin: 0;
-    padding: 40px 5%;  /* Ajout d'un padding horizontal en pourcentage */
+    padding: 40px 0;              /* plus de padding horizontal ici */
     background: #0e1626;
     color: #fff;
     box-sizing: border-box;
@@ -138,8 +138,8 @@ section, .main-container, .home {
 /* Pour les titres */
 h1, h2 {
     color: #fff;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 0; /* 3) Enlève les “gaps” ajoutés élément par élément */
+    margin-right: 0;
 }
 
 /* Boutons: row, full width, centrés */
@@ -198,15 +198,17 @@ section {
         margin-right: 10px;
     }
     .button-row .btn {
-        padding: 16px 18px;
+        padding-left: 0;
+        padding-right: 0;
         font-size: 1em;
     }
 }
 
 /* Pour éviter un scroll horizontal sur mobile */
-html {
+html, body {
     overflow-x: hidden;
 }
+
 
 
 
