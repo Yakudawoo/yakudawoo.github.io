@@ -14,6 +14,35 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
 }
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.main-container > div, 
+.main-container > section {
+    width: 100%;
+    max-width: 1200px; /* Limitez la largeur maximale pour les grands écrans */
+    padding: 20px;
+}
+
+/* Pour les images responsives dans les projets */
+.project-imgs {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.project-imgs img,
+.center-img img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* Barre d'annonce */
 .announcement-bar {
@@ -93,35 +122,17 @@ nav {
     margin-left: 10px;
 }
 /* Correction pour main-container et sections */
-.main-container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden; /* Empêche le défilement horizontal */
-}
-
-section {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 40px 5%; /* Padding horizontal en pourcentage pour flexibilité */
-  background: #0e1626;
-  color: #fff;
-  box-sizing: border-box;
-  border-radius: 0;
-}
-/* Sections: full width, no horizontal scroll, fond bleu */
-.home {
-    width: 100%;
-    max-width: 100%;
+/* Remplacez ces règles dans votre CSS */
+section, .main-container, .home {
+    width: 100%;       /* Utilisez 100% au lieu de 100vw */
+    max-width: 100%;   /* Max-width de 100% pour éviter les débordements */
     margin: 0;
-    padding: 40px 0;
+    padding: 40px 5%;  /* Ajout d'un padding horizontal en pourcentage */
     background: #0e1626;
     color: #fff;
     box-sizing: border-box;
     border-radius: 0;
+    overflow-x: hidden; /* Empêche les débordements horizontaux */
 }
 
 /* Pour les titres */
@@ -196,6 +207,7 @@ section {
 html {
     overflow-x: hidden;
 }
+
 
 
 
