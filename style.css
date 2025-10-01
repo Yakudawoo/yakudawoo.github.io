@@ -8,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     background: #f4f4f4;
     font-family: Arial, sans-serif;
@@ -17,7 +17,7 @@ body {
 
 /* Barre d'annonce */
 .announcement-bar {
-    width: 100vw;
+    width: 100%;
     background: #dff6dd;
     color: #2e3c24;
     text-align: center;
@@ -36,7 +36,7 @@ header {
     position: sticky;
     top: 42px; /* Hauteur du bandeau d'annonce */
     z-index: 1100;
-    width: 100vw;
+    width: 100%;
     border-bottom: 2px solid #fff;
     margin: 0;
     padding: 0;
@@ -49,7 +49,7 @@ nav {
     align-items: center;
     padding: 0 40px;
     height: 65px;
-    width: 100vw;
+    width: 100%;
     background: #021c3a;
     box-sizing: border-box;
     margin: 0;
@@ -114,8 +114,8 @@ section {
 }
 /* Sections: full width, no horizontal scroll, fond bleu */
 .home {
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     margin: 0;
     padding: 40px 0;
     background: #0e1626;
@@ -136,7 +136,7 @@ h1, h2 {
     display: flex;
     gap: 32px;
     justify-content: flex-start;
-    width: 100vw;
+    width: 100%;
     padding: 0 0 2em 40px;
     box-sizing: border-box;
 }
@@ -196,6 +196,7 @@ section {
 html {
     overflow-x: hidden;
 }
+
 
 
 
