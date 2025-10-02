@@ -6,11 +6,11 @@
 }
 
 body {
-    margin: 0;
+    margin: 0; /* enlève le 10% qui causait la bande vide */
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    background: #f4f4f4;
+    background: white;
     font-family: Arial, sans-serif;
     color: #333;
 }
@@ -20,6 +20,7 @@ body {
     align-items: center;
     width: 100%;
     padding: 0;
+    gap: 60px; /* espace auto entre tous les enfants */
 }
 
 .main-container > div, 
@@ -208,6 +209,7 @@ section {
 html, body {
     overflow-x: hidden;
 }
+
 
 
 
